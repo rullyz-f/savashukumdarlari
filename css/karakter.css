@@ -1,0 +1,701 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --koyu-arkaplan: #1a1a1a;
+    --koyu-arkaplan2: #2d2d2d;
+    --parsomen: #f5f1e8;
+    --altin-sarisi: #9c8065;
+    --koyu-altin-sarisi: #6e4521;
+    --yazi: #333333;
+}
+
+h1,
+h1 span,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--yazi);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    color: var(--yazi);
+    font-weight: 400;
+
+}
+
+ul {
+    font-family: 'Libre Baskerville', serif;
+    color: var(--yazi);
+    font-weight: 500;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    width: 60rem;
+    margin: auto;
+
+}
+
+
+.container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+
+}
+
+/* header {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+} */
+
+.header-iskender {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/iskenderslider.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-hannibal {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/hannibalbarca.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-metehan {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/metehan.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-cesar {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/cesar.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-saladin {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/saladins.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-cengizhan {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/cengiz.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-timur {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/timur.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+}
+
+.header-frederick {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/frederickthegreat.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-napolyon {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/napolyon.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+.header-erwin {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
+        url(../images/erwin2.jpg);
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header h1 span {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    color: #c79b6c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 1.5rem 0;
+    margin-bottom: 4rem;
+}
+
+.navbar ul {
+    gap: 3rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 8px 0;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #9c8065;
+    border-bottom: 2px solid #9c8065;
+}
+
+.text {
+
+    margin: auto;
+    margin-top: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    line-height: 1.7;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+    border-left: 4px solid #c79b6c;
+    padding-left: .5rem;
+    border-bottom: 1px solid #1b1b1ba1;
+}
+
+.text p {
+    color: #555;
+    font-size: 1rem;
+
+}
+
+.text a {
+    padding: .5rem .8rem;
+    background-color: #9767349d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.text a:hover {
+    background-color: #965a19c5;
+
+}
+
+.kenarresimsag {
+    float: right;
+    width: 20rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    transition: all 0.3s ease;
+}
+
+.kenarresimsag p {
+    background-color: #55555554;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.kenarresimsag img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.kenarresimsage {
+    background-color: #55555554;
+    width: 6rem;
+    float: right;
+    margin-left: 1.1rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.kenarresimsage img {
+    width: 4rem;
+
+
+}
+
+.kenarresimsage p {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.kenarresimsol {
+    float: left;
+
+    width: 13rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.kenarresimsol p {
+    background-color: #55555554;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.kenarresimsol img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.kenarresimsol:hover,
+.kenarresimsag:hover,
+.kenarresimsage:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+
+}
+
+
+
+.plan {
+    background-color: #f3f3f3;
+    padding: 1.3rem;
+    margin: 1.3rem 0;
+    border-left: 5px solid #999;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1a1a1a;
+    margin-top: 4rem;
+
+
+}
+
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    color: #c79b6c;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.footer-section ul li a:hover {
+    color: #9c8065;
+    padding-left: 5px;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #9c8065;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    background-color: #6e4521;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #444;
+    color: #999;
+}
+
+footer p {
+    color: white;
+    transition: all .4s ease;
+}
+
+footer p:hover {
+    color: var(--altin-sarisi);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #9c8065;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    display: flex;
+}
+
+.back-to-top:hover {
+    background-color: #6e4521;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.back-to-top:active {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        min-height: 350px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h1 span {
+        font-size: 1rem;
+    }
+
+    header .navbar ul {
+        gap: 1rem;
+        padding: 0.8rem;
+    }
+
+    header .navbar a {
+        font-size: 0.95rem;
+    }
+
+    .text {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .text h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .text p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .kenarresimsag,
+    .kenarresimsol {
+        width: 100%;
+        float: none;
+        margin: 1rem 0;
+    }
+
+    .kenarresimsag img,
+    .kenarresimsol img {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    header {
+        min-height: 300px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        padding: 1rem 0.5rem 0;
+    }
+
+    header h1 span {
+        font-size: 0.9rem;
+    }
+
+    header .navbar ul {
+        gap: 0.8rem;
+        padding: 0.8rem;
+        flex-wrap: wrap;
+    }
+
+    header .navbar a {
+        font-size: 0.85rem;
+        padding: 5px 5px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .text {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+        border-left: 3px solid #c79b6c;
+    }
+
+    .text h3 {
+        font-size: 1rem;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+        line-height: 1.6;
+    }
+
+    .kenarresimsag p,
+    .kenarresimsol p {
+        font-size: 0.8rem;
+    }
+
+
+
+    .plan {
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
+    }
+}
