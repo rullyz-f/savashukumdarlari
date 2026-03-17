@@ -27,7 +27,6 @@ p {
     font-family: 'Source Serif Pro', serif;
     color: var(--yazi);
     font-weight: 400;
-
 }
 
 ul {
@@ -41,23 +40,22 @@ html {
 }
 
 body {
-
     font-family: 'Libre Baskerville', serif;
     line-height: 1.6;
     background: var(--parsomen);
     color: var(--yazi);
-
 }
 
-
 .container {
-    width: 60rem;
+    width: 90%;
+    max-width: 60rem;
     margin: auto;
+    padding: 0 1rem;
 }
 
 h1 {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
     padding: .5rem;
 }
 
@@ -71,12 +69,12 @@ header {
     background-position: center 50%;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 700px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem
+    padding: 2rem 1rem;
 }
 
 header .container {
@@ -88,7 +86,7 @@ header .container {
 }
 
 header h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
     text-align: center;
@@ -99,7 +97,7 @@ header h1 {
 
 header h1 span {
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: normal;
     margin-top: 1rem;
     color: #c79b6c;
@@ -113,8 +111,9 @@ header h1 span {
     justify-content: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 1.5rem 2rem;
-    margin-bottom: 4rem;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar-content {
@@ -123,23 +122,28 @@ header h1 span {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
-    gap: 2rem;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .navbar-menu {
-    gap: 3rem;
+    gap: 2rem;
     display: flex;
     list-style: none;
     padding: 0;
     font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     padding: 8px 0;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -147,30 +151,29 @@ header h1 span {
     border-bottom: 2px solid #9c8065;
 }
 
-
 .search-container-navbar {
     position: relative;
-    width: 280px;
+    width: 250px;
+    flex-shrink: 0;
 }
 
 .search-box-navbar {
     width: 100%;
-    padding: 10px 15px;
-    font-size: 0.95rem;
-
+    padding: 8px 12px;
+    font-size: 0.9rem;
     border-radius: 6px;
     background-color: rgba(255, 255, 255, 0.95);
     color: #333;
     font-family: 'Source Serif Pro', serif;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: none;
 }
 
 .search-box-navbar:focus {
     outline: none;
     background-color: white;
     box-shadow: 0 0 12px rgba(156, 128, 101, 0.6);
-    border-color: #6e4521;
 }
 
 .search-box-navbar::placeholder {
@@ -186,7 +189,7 @@ header h1 span {
     border: 1px solid #ddd;
     border-top: none;
     border-radius: 0 0 6px 6px;
-    max-height: 350px;
+    max-height: 300px;
     overflow-y: auto;
     display: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -199,7 +202,7 @@ header h1 span {
 }
 
 .search-result-item-navbar {
-    padding: 12px 15px;
+    padding: 10px 12px;
     cursor: pointer;
     border-bottom: 1px solid #eee;
     transition: all 0.2s ease;
@@ -208,53 +211,48 @@ header h1 span {
     gap: 10px;
     text-decoration: none;
     color: inherit;
+    font-size: 0.9rem;
 }
 
 .search-result-item-navbar:hover {
     background-color: #f5f1e8;
-    padding-left: 20px;
-}
-
-.search-result-item-navbar:last-child {
-    border-bottom: none;
+    padding-left: 15px;
 }
 
 .search-result-item-navbar strong {
     color: #6e4521;
     font-family: 'Playfair Display', serif;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .search-result-item-navbar small {
     color: #999;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     display: block;
 }
 
 .search-result-thumbnail-navbar {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #9c8065;
+    flex-shrink: 0;
 }
 
 .search-no-results-navbar {
-    padding: 15px;
+    padding: 12px;
     text-align: center;
     color: #999;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
-
-
-
 
 .starter-article {
     position: relative;
     width: 100%;
     max-width: 50rem;
-    margin: 4rem auto 2rem;
-    padding: 3rem;
+    margin: 2rem auto;
+    padding: 2rem;
     background: linear-gradient(135deg, #f5f1e8 0%, #ebe4d9 50%, #dfd7cc 100%);
     border-radius: 0;
     box-shadow:
@@ -262,7 +260,6 @@ header h1 span {
         inset 0 1px 0 rgba(255, 255, 255, 0.5);
     border: 2px solid #c79b6c;
     transition: all 0.5s ease;
-    transform: perspective(1000px) rotateX(0deg);
 }
 
 .starter-article::before {
@@ -278,7 +275,7 @@ header h1 span {
     box-shadow:
         0 25px 50px rgba(0, 0, 0, 0.3),
         inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    transform: perspective(1000px) rotateX(2deg) translateY(-8px);
+    transform: perspective(1000px) rotateX(2deg) translateY(-5px);
 }
 
 .starter-article * {
@@ -287,221 +284,136 @@ header h1 span {
 }
 
 .starter-article h2 {
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: #6e4521;
     font-family: 'Cinzel', serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .starter-article p {
-    font-size: 1.1rem;
-    line-height: 2;
+    font-size: 1rem;
+    line-height: 1.8;
     text-align: center;
     color: #4a4a4a;
     font-style: italic;
-    font-weight: 500;
-    letter-spacing: 0.5px;
 }
-
-
 
 .card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-
     overflow: hidden;
-
     background: white;
-
-    transition: transform .3s ease;
-
+    transition: transform 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    /* display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    border: 1px solid rgb(212, 212, 212);
-   
-    background-color: white;
-    transition: all 0.3s ease;
-    background: white;
-    border-color: var(--altin-sarisi);
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-
 }
-
 
 .card:hover {
     transform: translateY(-8px);
-
-    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); */
-
-    border-color: var(--koyu-altin-sarisi);
-
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card-img {
-    flex: 0 0 19rem;
-    border-top-left-radius: inherit;
     overflow: hidden;
-    height: auto;
-    min-width: 20rem;
-    transition: transform 1s ease;
+    min-height: 200px;
 }
-
-
 
 .card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 
 .card:hover img {
     transform: scale(1.05);
 }
 
+.card-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 0;
-
-    margin-top: 0.5rem;
-
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: color 0.3s ease;
 }
 
-.card:hover .card-text h3 {
+.card:hover h3 {
     color: var(--koyu-altin-sarisi);
-
 }
 
 .card h3 span {
     display: block;
     font-style: italic;
     color: #a9a9a9;
-
     font-weight: normal;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-
-    font-style: italic;
-
+    font-size: 0.85rem;
+    margin-top: 0.4rem;
 }
-
-
-
-
 
 .card:nth-child(odd) {
     background-color: #83828234;
-
 }
 
 .card:nth-child(even) {
     background-color: #f9f9f9;
-
-}
-
-
-
-
-.card-text {
-    flex: 1;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-text h3 {
-    transition: color 0.3s ease;
-}
-
-.card:hover .card-text h3 {
-    color: var(--koyu-altin-sarisi);
-
 }
 
 .card-text p {
-    color: #00000091;
-    letter-spacing: 1px;
-    word-spacing: .2rem;
-    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 1rem 0;
     transition: color 0.3s ease;
 }
 
 .card:hover .card-text p {
-    color: #000000;
-
+    color: #000;
 }
 
 .detay-btn {
     background: #9c8065;
     color: white;
     display: inline-block;
-    padding: 10px 18px;
-
-    border-radius: 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    margin-left: auto;
-    transition: all .3s ease;
-    /* 
-    padding: 10px 20px;
-    background-color: var(--altin-sarisi);
-    color: white;
-    
-    border-radius: 10px;
-    margin-top: 1rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    display: block;
+    transition: all 0.3s ease;
     width: fit-content;
-  
-    margin-top: 1rem;
-    transition: all .5s ease; */
+    font-size: 0.9rem;
 }
 
 .detay-btn:hover {
     background-color: var(--koyu-altin-sarisi);
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-}
-
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: #1a1a1a;
-    margin-top: 4rem;
-
-
 }
 
 footer {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
-    padding: 3rem 2rem 1rem;
-    margin-top: 4rem;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -509,7 +421,7 @@ footer {
 .footer-section h3 {
     color: #c79b6c;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -517,7 +429,7 @@ footer {
 .footer-section p {
     color: #ccc;
     line-height: 1.6;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .footer-section ul {
@@ -526,7 +438,7 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
 }
 
 .footer-section ul li a {
@@ -534,6 +446,7 @@ footer {
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
 }
 
 .footer-section ul li a:hover {
@@ -543,7 +456,7 @@ footer {
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
     flex-wrap: wrap;
 }
 
@@ -556,6 +469,7 @@ footer {
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .social-icon:hover {
@@ -568,15 +482,7 @@ footer {
     padding-top: 1.5rem;
     border-top: 1px solid #444;
     color: #999;
-}
-
-footer p {
-    color: white;
-    transition: all .4s ease;
-}
-
-footer p:hover {
-    color: var(--altin-sarisi);
+    font-size: 0.85rem;
 }
 
 .back-to-top {
@@ -606,64 +512,60 @@ footer p:hover {
 .back-to-top:hover {
     background-color: #6e4521;
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.back-to-top:active {
-    transform: translateY(-2px);
+.about-section,
+.mission-section,
+.why-section,
+.contact-cta {
+    margin: 2rem auto;
 }
 
 .about-section {
     background: white;
-    padding: 3rem;
-    border-radius: 12px;
-    margin-top: 3rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     border-left: 5px solid #9c8065;
 }
 
 .about-section h2 {
     color: #6e4521;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .about-section p {
     color: #555;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: 1.5rem;
-    text-align: justify;
+    margin-bottom: 1.2rem;
 }
 
-/* MISYON & VİZYON */
 .mission-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    margin: 3rem 0;
 }
 
 .mission-item {
     background: linear-gradient(135deg, #f5f1e8 0%, #ebe4d9 100%);
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 1.5rem;
+    border-radius: 8px;
     border: 2px solid #c79b6c;
     transition: all 0.3s ease;
 }
 
 .mission-item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .mission-item h3 {
     color: #6e4521;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
 }
 
 .mission-item p {
@@ -672,123 +574,30 @@ footer p:hover {
     line-height: 1.7;
 }
 
-/* KARATERLERİN INTF */
-.characters-intro {
-    margin: 4rem 0;
-}
-
-.characters-intro h2 {
-    color: #6e4521;
-    font-size: 2.2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.characters-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.char-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.char-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    border-color: #9c8065;
-}
-
-.char-card img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.char-card:hover img {
-    transform: scale(1.05);
-}
-
-.char-card h4 {
-    color: #6e4521;
-    font-size: 1.3rem;
-    padding: 1rem 1rem 0;
-    margin: 0;
-    font-family: 'Playfair Display', serif;
-}
-
-.char-card p {
-    padding: 0 1rem;
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-}
-
-.char-card p:first-of-type {
-    color: #999;
-    font-size: 0.85rem;
-    font-weight: bold;
-}
-
-.char-desc {
-    color: #666 !important;
-    font-size: 0.95rem !important;
-    line-height: 1.5;
-    padding-bottom: 1rem !important;
-}
-
-.char-link {
-    display: block;
-    padding: 1rem;
-    background-color: #f5f1e8;
-    color: #6e4521;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    border-top: 1px solid #e0e0e0;
-}
-
-.char-link:hover {
-    background-color: #9c8065;
-    color: white;
-}
-
-/* NEDEN BU PROJE */
 .why-section {
-    margin: 4rem 0;
     background: linear-gradient(135deg, #f5f1e8 0%, #ebe4d9 100%);
-    padding: 3rem;
-    border-radius: 12px;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .why-section h2 {
     text-align: center;
     color: #6e4521;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .why-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .why-item {
     background: white;
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
@@ -800,58 +609,52 @@ footer p:hover {
 
 .why-item h3 {
     color: #6e4521;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 0.8rem;
-    font-family: 'Playfair Display', serif;
 }
 
 .why-item p {
     color: #666;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin: 0;
 }
 
-/* İLETİŞİM CTA */
 .contact-cta {
     background: linear-gradient(135deg, #9c8065 0%, #6e4521 100%);
     color: white;
-    padding: 3rem;
-    border-radius: 12px;
+    padding: 2rem;
+    border-radius: 8px;
     text-align: center;
-    margin: 4rem 0;
 }
 
 .contact-cta h2 {
     color: white;
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .contact-cta p {
     color: rgba(255, 255, 255, 0.9);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-button {
     display: inline-block;
     background-color: white;
     color: #6e4521;
-    padding: 12px 30px;
-    border-radius: 8px;
+    padding: 10px 25px;
+    border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
     transition: all 0.3s ease;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .cta-button:hover {
     background-color: #f5f1e8;
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-simple {
@@ -860,15 +663,9 @@ footer p:hover {
     justify-content: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 1.5rem 0;
-    margin-bottom: 4rem;
-}
-
-.navbar-center {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
+    padding: 1rem 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar-simple ul {
@@ -876,24 +673,19 @@ footer p:hover {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 3rem;
+    gap: 1.5rem;
     justify-content: center;
-}
-
-.navbar-simple li {
-    margin: 0;
-    padding: 0;
+    flex-wrap: wrap;
 }
 
 .navbar-simple a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
-    padding: 8px 0;
+    font-size: 0.95rem;
+    padding: 6px 0;
     transition: 0.3s;
-    font-family: 'Libre Baskerville', serif;
     font-weight: bold;
-    display: block;
+    white-space: nowrap;
 }
 
 .navbar-simple a:hover {
@@ -901,364 +693,152 @@ footer p:hover {
     border-bottom: 2px solid #9c8065;
 }
 
-.contact-header {
-    text-align: center;
-    margin: 3rem 0 4rem;
-}
+/* RESPONSIVE */
+@media (max-width: 1024px) {
 
-.contact-header h2 {
-    color: #6e4521;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: 'Playfair Display', serif;
-}
-
-.contact-header p {
-    color: #666;
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'Source Serif Pro', serif;
-}
-
-/* İLETİŞİM WRAPPER */
-.contact-wrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    margin-bottom: 4rem;
-}
-
-/* FORM */
-.contact-form-section {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #9c8065;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    color: #6e4521;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
-    font-size: 1rem;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 12px 15px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-family: 'Source Serif Pro', serif;
-    font-size: 0.95rem;
-    color: #333;
-    transition: all 0.3s ease;
-    background-color: #fafafa;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #9c8065;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(156, 128, 101, 0.2);
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.submit-btn {
-    padding: 14px 30px;
-    background: linear-gradient(135deg, #9c8065 0%, #6e4521 100%);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 1rem;
-}
-
-.submit-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.submit-btn:active {
-    transform: translateY(-1px);
-}
-
-/* BAŞARI MESAJI */
-.success-message {
-    background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
-    color: white;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.success-message h3 {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.success-message p {
-    color: rgba(255, 255, 255, 0.95);
-    font-size: 1rem;
-    margin: 0;
-    font-family: 'Source Serif Pro', serif;
-}
-
-/* İLETİŞİM BİLGİLERİ */
-.contact-info {
-    background: linear-gradient(135deg, #f5f1e8 0%, #ebe4d9 100%);
-    padding: 2.5rem;
-    border-radius: 12px;
-    border: 2px solid #c79b6c;
-    height: fit-content;
-}
-
-.contact-info h3 {
-    color: #6e4521;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.info-item {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid #ddd;
-}
-
-.info-item:last-of-type {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.info-item h4 {
-    color: #6e4521;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.info-item p {
-    color: #666;
-    font-size: 0.95rem;
-    margin: 0;
-    line-height: 1.6;
-    font-family: 'Source Serif Pro', serif;
-}
-
-.info-item a {
-    color: #9c8065;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.info-item a:hover {
-    color: #6e4521;
-    text-decoration: underline;
-}
-
-.social-info {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid #ddd;
-}
-
-.social-info h4 {
-    color: #6e4521;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
-}
-
-.social-links-contact {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.social-contact {
-    display: inline-block;
-    padding: 8px 15px;
-    background-color: #9c8065;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-    font-weight: bold;
-    font-family: 'Libre Baskerville', serif;
-}
-
-.social-contact:hover {
-    background-color: #6e4521;
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 0 1rem;
-        max-width: 100%;
-    }
-
-    header {
-        padding: 1.5rem 0;
-    }
-
+    header,
     header h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.5px;
+        min-height: 400px;
+        font-size: 2.5rem;
     }
 
     .navbar-content {
         flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .navbar-menu {
-        flex-wrap: wrap;
-        gap: 0.8rem;
-        justify-content: center;
-    }
-
-    .navbar-menu a {
-        font-size: 0.9rem;
-        padding: 6px 10px;
     }
 
     .search-container-navbar {
         width: 100%;
     }
 
-    .search-box-navbar {
+    .card {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+       
+        line-height: 1.2;
+    }
+
+    header h1 span {
+        font-size: 0.75rem;
+        
+        margin-top: 0.5rem;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-container-navbar {
         width: 100%;
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        order: 2;
     }
 
-    .search-results-navbar {
-        max-height: 300px;
+    .navbar-menu {
+        order: 1;
+        width: 100%;
+        gap: 0.8rem;
     }
 
-    main {
-        padding: 1.5rem 0;
+    .container {
+        width: 95%;
+    }
+
+    .navbar {
+        padding: 0.8rem 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar-menu {
+        gap: 1rem;
+    }
+
+    .navbar a {
+        font-size: 0.85rem;
+    }
+
+    .search-box-navbar {
+        font-size: 0.85rem;
+        padding: 6px 10px;
     }
 
     .starter-article {
         padding: 1.5rem;
-        margin-bottom: 2rem;
+        margin: 1.5rem auto;
     }
 
     .starter-article h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .starter-article p {
         font-size: 0.95rem;
-        line-height: 1.6;
     }
 
     .card {
-        padding: 1.5rem;
-        margin-bottom: 1.5rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 1.2rem;
     }
 
-    .card h2 {
-        font-size: 1.3rem;
-        margin-bottom: 0.8rem;
+    .card-img {
+        min-height: 180px;
     }
 
-    .card p {
-        font-size: 0.9rem;
-        line-height: 1.6;
+    .card-text {
+        padding: 1.2rem;
     }
 
-    .card-link {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+    .card h3 {
+        font-size: 1.1rem;
     }
 
-    /* HAKKIMIZDA */
+    .card-text p {
+        font-size: 0.85rem;
+    }
+
+    .detay-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
     .about-section {
         padding: 1.5rem;
-        border-left: 3px solid #9c8065;
     }
 
     .about-section h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .about-section p {
-        font-size: 0.95rem;
-    }
-
-    .mission-section {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin: 2rem 0;
+        font-size: 0.9rem;
     }
 
     .mission-item {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
 
     .mission-item h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .mission-item p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .why-section {
         padding: 1.5rem;
-        margin: 2rem 0;
     }
 
     .why-section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .why-content {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .why-item {
@@ -1270,7 +850,7 @@ footer p:hover {
     }
 
     .why-item p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     .contact-cta {
@@ -1278,89 +858,50 @@ footer p:hover {
     }
 
     .contact-cta h2 {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
-    .contact-cta p {
-        font-size: 1rem;
-    }
-
-    /* İLETİŞİM FORMU */
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .contact-form-section {
-        padding: 1.5rem;
-    }
-
-    .contact-info {
-        padding: 1.5rem;
-        height: auto;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 16px;
-        padding: 10px 12px;
-    }
-
-    .submit-btn {
-        padding: 12px 20px;
-        font-size: 0.95rem;
-    }
-
-    .contact-info h3 {
-        font-size: 1.3rem;
-    }
-
-    .info-item h4 {
-        font-size: 1rem;
-    }
-
-    .info-item p {
+    .cta-button {
+        padding: 8px 20px;
         font-size: 0.9rem;
     }
 
-    .social-contact {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-    }
-
-    /* NAVBAR SIMPLE */
-    .navbar-simple {
-        padding: 1rem;
-    }
-
-    .navbar-simple ul {
-        gap: 1.5rem;
-        flex-wrap: wrap;
-    }
-
-    .navbar-simple a {
-        font-size: 0.95rem;
-    }
-
-    /* FOOTER */
     .footer-container {
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     .footer-section h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
-    .footer-section p {
-        font-size: 0.9rem;
+    .footer-section p,
+    .footer-section a {
+        font-size: 0.85rem;
     }
 
-    /* BAŞA DÖN BUTONU */
+    .social-icon {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
     .back-to-top {
         width: 45px;
         height: 45px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .navbar-simple {
+        padding: 0.8rem 0.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar-simple ul {
+        gap: 0.8rem;
+    }
+
+    .navbar-simple a {
+        font-size: 0.85rem;
     }
 }
 
@@ -1369,156 +910,146 @@ footer p:hover {
         font-size: 13px;
     }
 
-    body {
-        font-size: 13px;
+    header,
+    header h1 {
+        min-height: 280px;
+        font-size: 1.4rem;
+        padding: 1rem 0.5rem;
+    }
+
+    header h1 span {
+        font-size: 0.8rem;
     }
 
     .container {
-        padding: 0 0.8rem;
-        max-width: 100%;
+        width: 98%;
+        padding: 0;
     }
 
-    header {
-        padding: 1rem 0;
+    h1 {
+        margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
-    header h1 {
-        font-size: 1.4rem;
-        letter-spacing: 0;
+    .navbar {
+        padding: 0.6rem 0.3rem;
+        margin-bottom: 1rem;
+        gap: 0.5rem;
     }
 
-    /* NAVBAR */
     .navbar-content {
-        flex-direction: column;
-        gap: 0.8rem;
-        padding: 0.8rem;
+        gap: 0.5rem;
     }
 
     .navbar-menu {
         gap: 0.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
+        order: 3;
+        width: 100%;
     }
 
-    .navbar-menu a {
+    .navbar a {
         font-size: 0.75rem;
-        padding: 5px 8px;
+        padding: 4px 0;
     }
 
     .search-container-navbar {
         width: 100%;
+        order: 2;
     }
 
     .search-box-navbar {
-        width: 100%;
-        padding: 8px 10px;
-        font-size: 0.85rem;
-    }
-
-    .search-results-navbar {
-        max-height: 250px;
-        max-width: 100%;
+        font-size: 0.8rem;
+        padding: 6px 10px;
     }
 
     .search-result-item-navbar {
-        padding: 0.6rem;
+        padding: 8px 10px;
+        font-size: 0.8rem;
     }
 
     .search-result-thumbnail-navbar {
-        width: 35px;
-        height: 35px;
-    }
-
-    /* MAIN CONTENT */
-    main {
-        padding: 1rem 0;
+        width: 25px;
+        height: 25px;
     }
 
     .starter-article {
-        padding: 1rem;
-        margin-bottom: 1.5rem;
-        border-radius: 8px;
+        padding: 1.2rem;
+        margin: 1rem auto;
     }
 
     .starter-article h2 {
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
     }
 
     .starter-article p {
         font-size: 0.85rem;
         line-height: 1.5;
-        text-align: left;
     }
 
-    /* KARTLAR */
     .card {
-        padding: 1rem;
-        margin-bottom: 1.2rem;
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
         border-radius: 8px;
     }
 
-    .card h2 {
-        font-size: 1.2rem;
-        margin-bottom: 0.6rem;
+    .card-img {
+        min-height: 150px;
     }
 
-    .card p {
-        font-size: 0.85rem;
-        line-height: 1.5;
+    .card-text {
+        padding: 1rem;
     }
 
-    .card-link {
-        padding: 8px 15px;
-        font-size: 0.85rem;
-        margin-top: 0.8rem;
+    .card h3 {
+        font-size: 1rem;
     }
 
-    /* HAKKIMIZDA SAYFASI */
+    .card h3 span {
+        font-size: 0.75rem;
+    }
+
+    .card-text p {
+        font-size: 0.8rem;
+        margin: 0.8rem 0;
+    }
+
+    .detay-btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+
     .about-section {
         padding: 1rem;
-        border-left: 2px solid #9c8065;
-        margin-top: 1rem;
+        border-left: 3px solid #9c8065;
     }
 
     .about-section h2 {
         font-size: 1.3rem;
-        margin-bottom: 0.8rem;
+        margin-bottom: 1rem;
     }
 
     .about-section p {
         font-size: 0.85rem;
-        text-align: left;
-        line-height: 1.5;
-        margin-bottom: 1rem;
-    }
-
-    .mission-section {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin: 1.5rem 0;
+        margin-bottom: 0.8rem;
     }
 
     .mission-item {
         padding: 1rem;
-        border-radius: 8px;
+        border-radius: 6px;
     }
 
     .mission-item h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin-bottom: 0.6rem;
     }
 
     .mission-item p {
-        font-size: 0.85rem;
-        line-height: 1.5;
+        font-size: 0.8rem;
     }
 
     .why-section {
         padding: 1rem;
-        margin: 1.5rem 0;
-        border-radius: 8px;
+        border-radius: 6px;
     }
 
     .why-section h2 {
@@ -1526,35 +1057,29 @@ footer p:hover {
         margin-bottom: 1rem;
     }
 
-    .why-content {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
     .why-item {
         padding: 1rem;
-        border-radius: 8px;
+        border-radius: 6px;
     }
 
     .why-item h3 {
-        font-size: 1rem;
+        font-size: 0.95rem;
         margin-bottom: 0.5rem;
     }
 
     .why-item p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         line-height: 1.5;
     }
 
     .contact-cta {
-        padding: 1rem;
-        margin: 1.5rem 0;
-        border-radius: 8px;
+        padding: 1.2rem;
+        border-radius: 6px;
     }
 
     .contact-cta h2 {
         font-size: 1.3rem;
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.8rem;
     }
 
     .contact-cta p {
@@ -1563,169 +1088,22 @@ footer p:hover {
     }
 
     .cta-button {
-        padding: 8px 16px;
-        font-size: 0.85rem;
+        padding: 6px 15px;
+        font-size: 0.8rem;
     }
 
-    /* İLETİŞİM FORMU */
-    .contact-header {
-        margin: 1.5rem 0 2rem;
-    }
-
-    .contact-header h2 {
-        font-size: 1.3rem;
-        margin-bottom: 0.6rem;
-    }
-
-    .contact-header p {
-        font-size: 0.85rem;
-    }
-
-    .contact-wrapper {
+    .footer-container {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
+        gap: 1.2rem;
     }
 
-    .contact-form-section {
-        padding: 1rem;
-        border-left: 3px solid #9c8065;
-        border-radius: 8px;
-    }
-
-    .contact-form {
-        gap: 1rem;
-    }
-
-    .form-group label {
-        font-size: 0.9rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        font-size: 16px;
-        padding: 10px;
-        border-radius: 6px;
-    }
-
-    .form-group textarea {
-        min-height: 100px;
-    }
-
-    .submit-btn {
-        padding: 10px 16px;
-        font-size: 0.9rem;
-        margin-top: 0.5rem;
-    }
-
-    .success-message {
-        padding: 1.2rem;
-        border-radius: 8px;
-    }
-
-    .success-message h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .success-message p {
-        font-size: 0.85rem;
-    }
-
-    .contact-info {
-        padding: 1rem;
-        border-radius: 8px;
-        border: 2px solid #c79b6c;
-    }
-
-    .contact-info h3 {
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .info-item {
-        margin-bottom: 1rem;
-        padding-bottom: 1rem;
-    }
-
-    .info-item h4 {
-        font-size: 0.95rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .info-item p {
-        font-size: 0.85rem;
-        line-height: 1.5;
-    }
-
-    .social-info {
-        margin-top: 1rem;
-        padding-top: 1rem;
-    }
-
-    .social-info h4 {
+    .footer-section h3 {
         font-size: 0.95rem;
         margin-bottom: 0.8rem;
     }
 
-    .social-links-contact {
-        gap: 0.4rem;
-    }
-
-    .social-contact {
-        padding: 5px 10px;
-        font-size: 0.75rem;
-    }
-
-    /* NAVBAR SIMPLE */
-    .navbar-simple {
-        padding: 0.8rem;
-        margin-bottom: 2rem;
-    }
-
-    .navbar-center {
-        width: 100%;
-    }
-
-    .navbar-simple ul {
-        gap: 0.4rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .navbar-simple li {
-        flex: 1;
-        min-width: 70px;
-    }
-
-    .navbar-simple a {
-        font-size: 0.75rem;
-        padding: 4px 2px;
-    }
-
-    /* FOOTER */
-    .footer-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        padding: 1.5rem;
-    }
-
-    .footer-section {
-        text-align: center;
-    }
-
-    .footer-section h3 {
-        font-size: 1rem;
-        margin-bottom: 0.6rem;
-    }
-
     .footer-section p {
         font-size: 0.8rem;
-    }
-
-    .footer-section ul {
-        gap: 0.8rem;
     }
 
     .footer-section a {
@@ -1733,83 +1111,83 @@ footer p:hover {
     }
 
     .social-links {
-        gap: 0.6rem;
+        gap: 0.5rem;
     }
 
     .social-icon {
-        font-size: 0.8rem;
-        padding: 4px 8px;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
     }
 
     .footer-bottom {
-        padding: 1rem;
-    }
-
-    .footer-bottom p {
+        padding-top: 1rem;
         font-size: 0.75rem;
     }
 
-    /* BAŞA DÖN BUTONU */
     .back-to-top {
         width: 40px;
         height: 40px;
         font-size: 1.2rem;
-        bottom: 20px;
-        right: 20px;
+        bottom: 15px;
+        right: 15px;
     }
 
-    /* ARAMA SONUÇLARI */
-    .search-result-thumbnail-navbar {
-        width: 30px;
-        height: 30px;
+    .navbar-simple {
+        padding: 0.6rem 0.3rem;
+        margin-bottom: 1rem;
     }
 
-    .search-result-item-navbar strong {
-        font-size: 0.8rem;
+    .navbar-simple ul {
+        gap: 0.5rem;
     }
 
-    .search-result-item-navbar small {
-        font-size: 0.7rem;
+    .navbar-simple a {
+        font-size: 0.75rem;
     }
 }
 
-/* ULTRA KÜÇÜK (max-width: 360px) */
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     html {
         font-size: 12px;
     }
 
+    header,
     header h1 {
+        min-height: 250px;
         font-size: 1.2rem;
     }
 
-    .navbar-menu a {
-        font-size: 0.7rem;
-        padding: 4px 5px;
+    .card-img {
+        min-height: 120px;
     }
 
-    .card h2 {
+    .card h3 {
+        font-size: 0.9rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.1rem;
+    }
+
+    .mission-item h3 {
+        font-size: 0.9rem;
+    }
+
+    .why-section h2 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 11px;
+    }
+
+    header h1 {
         font-size: 1rem;
     }
 
-    .card p {
-        font-size: 0.8rem;
-    }
-
-    .about-section h2,
-    .contact-header h2,
-    .why-section h2 {
-        font-size: 1.2rem;
-    }
-
-    .mission-item h3,
-    .why-item h3,
-    .info-item h4 {
-        font-size: 0.95rem;
-    }
-
-    .submit-btn {
-        padding: 8px 12px;
+    .card h3 {
         font-size: 0.85rem;
     }
 }

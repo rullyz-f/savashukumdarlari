@@ -27,7 +27,6 @@ p {
     font-family: 'Source Serif Pro', serif;
     color: var(--yazi);
     font-weight: 400;
-
 }
 
 ul {
@@ -41,22 +40,30 @@ html {
 }
 
 .container {
-    width: 60rem;
+    width: 90%;
+    max-width: 60rem;
     margin: auto;
-
+    padding: 0 1rem;
 }
-
 
 .container h1 {
     font-size: 3rem;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-
 }
 
-/* header {
+/* HEADER STYLES */
+.header-iskender,
+.header-hannibal,
+.header-metehan,
+.header-cesar,
+.header-saladin,
+.header-cengizhan,
+.header-timur,
+.header-frederick,
+.header-napolyon,
+.header-erwin {
     color: white;
     text-align: center;
     margin-bottom: 0;
@@ -64,138 +71,62 @@ html {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 400px;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-} */
+}
 
 .header-iskender {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/iskenderslider.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/iskenderslider.jpg);
     background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 .header-hannibal {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/hannibalbarca.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/hannibalbarca.jpg);
     background-position: center 30%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 .header-metehan {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/metehan.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/metehan.jpg);
     background-position: center 30%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 .header-cesar {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/cesar.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/cesar.jpg);
     background-position: center 30%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 .header-saladin {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/saladins.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/saladins.jpg);
     background-position: center 50%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 .header-cengizhan {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/cengiz.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/cengiz.jpg);
     background-position: center 20%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 .header-timur {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/timur.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/timur.jpg);
     background-position: center 30%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
+}
+
+.header-frederick {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/frederickthegreat.jpg);
+    background-position: center 20%;
+}
+
+.header-napolyon {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/napolyon.jpg);
+    background-position: center 20%;
+}
+
+.header-erwin {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/erwin2.jpg);
+    background-position: center 20%;
 }
 
 header .container {
@@ -204,60 +135,6 @@ header .container {
     align-items: center;
     gap: 0;
     width: 100%;
-}
-
-.header-frederick {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/frederickthegreat.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
-}
-
-.header-napolyon {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/napolyon.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
-}
-
-.header-erwin {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)),
-        url(../images/erwin2.jpg);
-    color: white;
-    text-align: center;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center 20%;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem
 }
 
 header h1 {
@@ -280,31 +157,34 @@ header h1 span {
     letter-spacing: 1px;
 }
 
-
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-    padding: 1.5rem 0;
-    margin-bottom: 4rem;
+    padding: 1rem 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .navbar ul {
-    gap: 3rem;
+    gap: 2rem;
     display: flex;
     list-style: none;
     padding: 0;
     font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navbar a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 8px 0;
     transition: 0.3s;
+    white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -313,44 +193,49 @@ header h1 span {
 }
 
 .text {
-
     margin: auto;
-    margin-top: 40px;
+    margin-top: 30px;
     background-color: white;
-    padding: 30px;
-    border-radius: 12px;
+    padding: 25px;
+    border-radius: 8px;
     line-height: 1.7;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
-    margin-bottom: .7rem;
+    margin-bottom: 0.8rem;
     border-left: 4px solid #c79b6c;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     border-bottom: 1px solid #1b1b1ba1;
+}
+
+.text h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #6e4521;
 }
 
 .text p {
     color: #555;
     font-size: 1rem;
-
+    margin-bottom: 1rem;
 }
 
 .text a {
-    padding: .5rem .8rem;
+    padding: 0.5rem 0.8rem;
     background-color: #9767349d;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-
+    display: inline-block;
 }
 
 .text a:hover {
     background-color: #965a19c5;
-
 }
 
 .kenarresimsag {
@@ -358,7 +243,6 @@ header h1 span {
     width: 20rem;
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
-
     transition: all 0.3s ease;
 }
 
@@ -374,34 +258,13 @@ header h1 span {
 .kenarresimsag img {
     width: 100%;
     border-radius: 8px;
-}
-
-.kenarresimsage {
-    background-color: #55555554;
-    width: 6rem;
-    float: right;
-    margin-left: 1.1rem;
-    margin-bottom: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.kenarresimsage img {
-    width: 4rem;
-
-
-}
-
-.kenarresimsage p {
-    font-size: 0.9rem;
-    color: #333;
-    padding: 0.5rem;
-    text-align: center;
-    margin-bottom: 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .kenarresimsol {
     float: left;
-
     width: 13rem;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
@@ -420,47 +283,38 @@ header h1 span {
 .kenarresimsol img {
     width: 100%;
     border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .kenarresimsol:hover,
-.kenarresimsag:hover,
-.kenarresimsage:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
-
+.kenarresimsag:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
 }
-
-
 
 .plan {
     background-color: #f3f3f3;
-    padding: 1.3rem;
-    margin: 1.3rem 0;
+    padding: 1.2rem;
+    margin: 1.2rem 0;
     border-left: 5px solid #999;
     font-style: italic;
-}
-
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: #1a1a1a;
-    margin-top: 4rem;
-
-
+    font-size: 0.95rem;
 }
 
 footer {
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
-    padding: 3rem 2rem 1rem;
-    margin-top: 4rem;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
 }
@@ -468,7 +322,7 @@ footer {
 .footer-section h3 {
     color: #c79b6c;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -476,7 +330,7 @@ footer {
 .footer-section p {
     color: #ccc;
     line-height: 1.6;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .footer-section ul {
@@ -485,7 +339,7 @@ footer {
 }
 
 .footer-section ul li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
 }
 
 .footer-section ul li a {
@@ -493,6 +347,7 @@ footer {
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: 'Libre Baskerville', serif;
+    font-size: 0.9rem;
 }
 
 .footer-section ul li a:hover {
@@ -502,7 +357,7 @@ footer {
 
 .social-links {
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
     flex-wrap: wrap;
 }
 
@@ -515,6 +370,7 @@ footer {
     text-decoration: none;
     transition: all 0.3s ease;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .social-icon:hover {
@@ -527,11 +383,12 @@ footer {
     padding-top: 1.5rem;
     border-top: 1px solid #444;
     color: #999;
+    font-size: 0.85rem;
 }
 
 footer p {
     color: white;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
 footer p:hover {
@@ -568,49 +425,129 @@ footer p:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.back-to-top:active {
-    transform: translateY(-2px);
-}
-
+/* RESPONSIVE */
 @media (max-width: 1024px) {
     .container {
         width: 90%;
     }
 
-    header {
-        min-height: 350px;
+    header,
+    .header-iskender,
+    .header-hannibal,
+    .header-metehan,
+    .header-cesar,
+    .header-saladin,
+    .header-cengizhan,
+    .header-timur,
+    .header-frederick,
+    .header-napolyon,
+    .header-erwin {
+        min-height: 450px;
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     header h1 span {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
-    header .navbar ul {
-        gap: 1rem;
-        padding: 0.8rem;
+    .navbar ul {
+        gap: 1.5rem;
     }
 
-    header .navbar a {
+    .navbar a {
         font-size: 0.95rem;
     }
 
     .text {
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     .text h2 {
         font-size: 1.3rem;
-        margin-bottom: 0.5rem;
+    }
+
+    .kenarresimsag,
+    .kenarresimsol {
+        width: 100%;
+        float: none;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0 0.5rem;
+    }
+
+    header,
+    .header-iskender,
+    .header-hannibal,
+    .header-metehan,
+    .header-cesar,
+    .header-saladin,
+    .header-cengizhan,
+    .header-timur,
+    .header-frederick,
+    .header-napolyon,
+    .header-erwin {
+        min-height: 350px;
+        background-attachment: scroll;
+        padding: 1.5rem 1rem;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h1 span {
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        padding: 0.8rem 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar ul {
+        gap: 1rem;
+    }
+
+    .navbar a {
+        font-size: 0.85rem;
+    }
+
+    .text {
+        padding: 18px;
+        margin-top: 20px;
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+        border-left: 3px solid #c79b6c;
+    }
+
+    .text h3 {
+        font-size: 1.05rem;
     }
 
     .text p {
-        font-size: 0.95rem;
-        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
     }
 
     .kenarresimsag,
@@ -620,69 +557,10 @@ footer p:hover {
         margin: 1rem 0;
     }
 
-    .kenarresimsag img,
-    .kenarresimsol img {
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 768px) {
-    header {
-        min-height: 300px;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-        padding: 1rem 0.5rem 0;
-    }
-
-    header h1 span {
-        font-size: 0.9rem;
-    }
-
-    header .navbar ul {
-        gap: 0.8rem;
-        padding: 0.8rem;
-        flex-wrap: wrap;
-    }
-
-    header .navbar a {
-        font-size: 0.85rem;
-        padding: 5px 5px;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    .text {
-        padding: 15px;
-        margin-top: 15px;
-    }
-
-    .text h2 {
-        font-size: 1.2rem;
-        border-left: 3px solid #c79b6c;
-    }
-
-    .text h3 {
-        font-size: 1rem;
-    }
-
-    .text p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-        line-height: 1.6;
-    }
-
     .kenarresimsag p,
     .kenarresimsol p {
         font-size: 0.8rem;
     }
-
-
 
     .plan {
         padding: 1rem;
@@ -691,11 +569,183 @@ footer p:hover {
     }
 
     .footer-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 1.5rem;
     }
 
     .footer-section h3 {
         font-size: 1rem;
+    }
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 98%;
+        padding: 0;
+    }
+
+    header,
+    .header-iskender,
+    .header-hannibal,
+    .header-metehan,
+    .header-cesar,
+    .header-saladin,
+    .header-cengizhan,
+    .header-timur,
+    .header-frederick,
+    .header-napolyon,
+    .header-erwin {
+        min-height: 280px;
+        padding: 1rem 0.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header h1 span {
+        font-size: 0.8rem;
+    }
+
+    .navbar {
+        padding: 0.6rem 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .navbar ul {
+        gap: 0.5rem;
+    }
+
+    .navbar a {
+        font-size: 0.75rem;
+        padding: 4px 0;
+    }
+
+    .text {
+        padding: 15px;
+        margin-top: 15px;
+        border-radius: 6px;
+    }
+
+    .text h2 {
+        font-size: 1.1rem;
+        border-left: 2px solid #c79b6c;
+        margin-bottom: 0.6rem;
+    }
+
+    .text h3 {
+        font-size: 0.95rem;
+        margin-top: 0.8rem;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+        margin-bottom: 0.7rem;
+        line-height: 1.5;
+    }
+
+    .text a {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .kenarresimsag,
+    .kenarresimsol {
+        width: 100%;
+        margin: 0.8rem 0;
+    }
+
+    .kenarresimsag p,
+    .kenarresimsol p {
+        font-size: 0.75rem;
+    }
+
+    .plan {
+        padding: 0.8rem;
+        margin: 0.8rem 0;
+        font-size: 0.8rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .footer-section h3 {
+        font-size: 0.95rem;
+    }
+
+    .footer-section p {
+        font-size: 0.8rem;
+    }
+
+    .social-icon {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.7rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header h1 span {
+        font-size: 0.7rem;
+    }
+
+    .text h2 {
+        font-size: 1rem;
+    }
+
+    .text p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    html {
+        font-size: 11px;
+    }
+
+    header h1 {
+        font-size: 1rem;
+    }
+
+    .text h2 {
+        font-size: 0.9rem;
     }
 }
