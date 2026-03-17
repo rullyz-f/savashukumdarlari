@@ -13,7 +13,10 @@
     --yazi: #333333;
 }
 
-h1, h1 span, h2, h3 {
+h1,
+h1 span,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
     color: var(--yazi);
     font-weight: 700;
@@ -32,7 +35,9 @@ ul {
     font-weight: 500;
 }
 
-html { font-size: 16px; }
+html {
+    font-size: 16px;
+}
 
 .container {
     width: 90%;
@@ -70,7 +75,7 @@ html { font-size: 16px; }
     align-items: center;
     justify-content: center;
     padding: 2rem 1rem;
-<<<<<<< HEAD
+    <<<<<<< HEAD
 }
 
 .header-iskender {
@@ -112,22 +117,51 @@ html { font-size: 16px; }
 .header-erwin {
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/erwin2.jpg);
 }
+
 =======
 }
 
-.header-iskender { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/iskenderslider.jpg); }
-.header-hannibal { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/hannibalbarca.jpg); }
-.header-metehan { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/metehan.jpg); }
-.header-cesar { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/cesar.jpg); }
-.header-saladin { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/saladins.jpg); }
-.header-cengizhan { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/cengiz.jpg); }
-.header-timur { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/timur.jpg); }
-.header-frederick { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/frederickthegreat.jpg); }
-.header-napolyon { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/napolyon.jpg); }
-.header-erwin { background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/erwin2.jpg); }
->>>>>>> 7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c
+.header-iskender {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/iskenderslider.jpg);
+}
 
-header .container {
+.header-hannibal {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/hannibalbarca.jpg);
+}
+
+.header-metehan {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/metehan.jpg);
+}
+
+.header-cesar {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/cesar.jpg);
+}
+
+.header-saladin {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/saladins.jpg);
+}
+
+.header-cengizhan {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/cengiz.jpg);
+}
+
+.header-timur {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/timur.jpg);
+}
+
+.header-frederick {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/frederickthegreat.jpg);
+}
+
+.header-napolyon {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/napolyon.jpg);
+}
+
+.header-erwin {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/erwin2.jpg);
+}
+
+>>>>>>>7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,9 +445,8 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-<<<<<<< HEAD
 
-    header,
+    <<<<<<< HEAD header,
     .header-iskender,
     .header-hannibal,
     .header-metehan,
@@ -468,186 +501,313 @@ footer {
     .header-frederick,
     .header-napolyon,
     .header-erwin {
-=======
-    header, .header-iskender, .header-hannibal, .header-metehan, .header-cesar, .header-saladin, .header-cengizhan, .header-timur, .header-frederick, .header-napolyon, .header-erwin {
-        min-height: 450px;
-    }
-    header h1 { font-size: 2.5rem; }
-    header h1 span { font-size: 1.1rem; }
-    .navbar ul { gap: 1.5rem; }
-    .kenarresimsag, .kenarresimsol { width: 100%; float: none; margin: 1rem 0; }
-}
 
-@media (max-width: 768px) {
-    html { font-size: 14px; }
-    .container { width: 95%; padding: 0 0.5rem; }
-    header, .header-iskender, .header-hannibal, .header-metehan, .header-cesar, .header-saladin, .header-cengizhan, .header-timur, .header-frederick, .header-napolyon, .header-erwin {
->>>>>>> 7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c
-        min-height: 350px;
-        background-attachment: scroll;
-    }
-    header h1 { font-size: 1.8rem; }
-    header h1 span { font-size: 0.9rem; }
-    .navbar { padding: 0.8rem; }
-    .navbar ul { gap: 1rem; }
-    .text { padding: 18px; margin-top: 20px; }
-    .text h2 { font-size: 1.2rem; }
-    .text p { font-size: 0.9rem; }
-    .kenarresimsag p, .kenarresimsol p { font-size: 0.8rem; }
-    .footer-container { grid-template-columns: 1fr 1fr; }
-}
+        =======header,
+        .header-iskender,
+        .header-hannibal,
+        .header-metehan,
+        .header-cesar,
+        .header-saladin,
+        .header-cengizhan,
+        .header-timur,
+        .header-frederick,
+        .header-napolyon,
+        .header-erwin {
+            min-height: 450px;
+        }
 
-<<<<<<< HEAD
-    header h1 {
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header h1 span {
+            font-size: 1.1rem;
+        }
+
+        .navbar ul {
+            gap: 1.5rem;
+        }
+
+        .kenarresimsag,
+        .kenarresimsol {
+            width: 100%;
+            float: none;
+            margin: 1rem 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 14px;
+        }
+
+        .container {
+            width: 95%;
+            padding: 0 0.5rem;
+        }
+
+        header,
+        .header-iskender,
+        .header-hannibal,
+        .header-metehan,
+        .header-cesar,
+        .header-saladin,
+        .header-cengizhan,
+        .header-timur,
+        .header-frederick,
+        .header-napolyon,
+        .header-erwin {
+            >>>>>>>7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c min-height: 350px;
+            background-attachment: scroll;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header h1 span {
+            font-size: 0.9rem;
+        }
+
+        .navbar {
+            padding: 0.8rem;
+        }
+
+        .navbar ul {
+            gap: 1rem;
+        }
+
+        .text {
+            padding: 18px;
+            margin-top: 20px;
+        }
+
+        .text h2 {
+            font-size: 1.2rem;
+        }
+
+        .text p {
+            font-size: 0.9rem;
+        }
+
+        .kenarresimsag p,
+        .kenarresimsol p {
+            font-size: 0.8rem;
+        }
+
+        .footer-container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+     header h1 {
         font-size: 1.8rem;
-=======
-@media (max-width: 600px) {
-    html { font-size: 13px; }
-    .container { width: 98%; padding: 0; }
-    header, .header-iskender, .header-hannibal, .header-metehan, .header-cesar, .header-saladin, .header-cengizhan, .header-timur, .header-frederick, .header-napolyon, .header-erwin {
-        min-height: 280px;
-        padding: 1rem 0.5rem;
->>>>>>> 7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c
-    }
-    header h1 { font-size: 1.4rem; }
-    header h1 span { font-size: 0.8rem; }
-    .navbar { padding: 0.6rem; }
-    .navbar ul { gap: 0.5rem; }
-    .navbar a { font-size: 0.75rem; }
-    .text { padding: 15px; margin-top: 15px; }
-    .text h2 { font-size: 1.1rem; }
-    .text h3 { font-size: 0.95rem; }
-    .text p { font-size: 0.8rem; }
-    .kenarresimsag, .kenarresimsol { width: 100%; margin: 0.8rem 0; }
-    .footer-container { grid-template-columns: 1fr; }
-}
 
-<<<<<<< HEAD
-    header h1 span {
-        font-size: 0.9rem;
-    }
+        @media (max-width: 600px) {
+            html {
+                font-size: 13px;
+            }
 
-    .navbar {
-        padding: 0.8rem;
-    }
+            .container {
+                width: 98%;
+                padding: 0;
+            }
 
-    .navbar ul {
-        gap: 1rem;
-    }
+            header,
+            .header-iskender,
+            .header-hannibal,
+            .header-metehan,
+            .header-cesar,
+            .header-saladin,
+            .header-cengizhan,
+            .header-timur,
+            .header-frederick,
+            .header-napolyon,
+            .header-erwin {
+                min-height: 280px;
+                padding: 1rem 0.5rem;
 
-    .text {
-        padding: 18px;
-        margin-top: 20px;
-    }
+            }
 
-    .text h2 {
-        font-size: 1.2rem;
-    }
+            header h1 {
+                font-size: 1.4rem;
+            }
 
-    .text p {
-        font-size: 0.9rem;
-    }
+            header h1 span {
+                font-size: 0.8rem;
+            }
 
-    .kenarresimsag p,
-    .kenarresimsol p {
-        font-size: 0.8rem;
-    }
+            .navbar {
+                padding: 0.6rem;
+            }
 
-    .footer-container {
-        grid-template-columns: 1fr 1fr;
-    }
-}
+            .navbar ul {
+                gap: 0.5rem;
+            }
 
-@media (max-width: 600px) {
-    html {
-        font-size: 13px;
-    }
+            .navbar a {
+                font-size: 0.75rem;
+            }
 
-    .container {
-        width: 98%;
-        padding: 0;
-    }
+            .text {
+                padding: 15px;
+                margin-top: 15px;
+            }
 
-    header,
-    .header-iskender,
-    .header-hannibal,
-    .header-metehan,
-    .header-cesar,
-    .header-saladin,
-    .header-cengizhan,
-    .header-timur,
-    .header-frederick,
-    .header-napolyon,
-    .header-erwin {
-        min-height: 280px;
-        padding: 1rem 0.5rem;
-    }
+            .text h2 {
+                font-size: 1.1rem;
+            }
 
-    header h1 {
-        font-size: 1.4rem;
-    }
+            .text h3 {
+                font-size: 0.95rem;
+            }
 
-    header h1 span {
-        font-size: 0.8rem;
-    }
+            .text p {
+                font-size: 0.8rem;
+            }
 
-    .navbar {
-        padding: 0.6rem;
-    }
+            .kenarresimsag,
+            .kenarresimsol {
+                width: 100%;
+                margin: 0.8rem 0;
+            }
 
-    .navbar ul {
-        gap: 0.5rem;
-    }
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        
 
-    .navbar a {
-        font-size: 0.75rem;
-    }
+        header h1 span {
+            font-size: 0.9rem;
+        }
 
-    .text {
-        padding: 15px;
-        margin-top: 15px;
-    }
+        .navbar {
+            padding: 0.8rem;
+        }
 
-    .text h2 {
-        font-size: 1.1rem;
-    }
+        .navbar ul {
+            gap: 1rem;
+        }
 
-    .text h3 {
-        font-size: 0.95rem;
-    }
+        .text {
+            padding: 18px;
+            margin-top: 20px;
+        }
 
-    .text p {
-        font-size: 0.8rem;
-    }
+        .text h2 {
+            font-size: 1.2rem;
+        }
 
-    .kenarresimsag,
-    .kenarresimsol {
-        width: 100%;
-        margin: 0.8rem 0;
-    }
+        .text p {
+            font-size: 0.9rem;
+        }
 
-    .footer-container {
-        grid-template-columns: 1fr;
-    }
-}
+        .kenarresimsag p,
+        .kenarresimsol p {
+            font-size: 0.8rem;
+        }
 
-@media (max-width: 480px) {
-    html {
-        font-size: 12px;
-    }
+        .footer-container {
+            grid-template-columns: 1fr 1fr;
+        }
+        }
+        @media (max-width: 600px) {
+            html {
+                font-size: 13px;
+            }
 
-    header h1 {
-        font-size: 1.2rem;
-    }
+            .container {
+                width: 98%;
+                padding: 0;
+            }
 
-    header h1 span {
-        font-size: 0.7rem;
-    }
-}
-=======
-@media (max-width: 480px) {
-    html { font-size: 12px; }
-    header h1 { font-size: 1.2rem; }
-    header h1 span { font-size: 0.7rem; }
-}
->>>>>>> 7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c
+            header,
+            .header-iskender,
+            .header-hannibal,
+            .header-metehan,
+            .header-cesar,
+            .header-saladin,
+            .header-cengizhan,
+            .header-timur,
+            .header-frederick,
+            .header-napolyon,
+            .header-erwin {
+                min-height: 280px;
+                padding: 1rem 0.5rem;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            header h1 span {
+                font-size: 0.8rem;
+            }
+
+            .navbar {
+                padding: 0.6rem;
+            }
+
+            .navbar ul {
+                gap: 0.5rem;
+            }
+
+            .navbar a {
+                font-size: 0.75rem;
+            }
+
+            .text {
+                padding: 15px;
+                margin-top: 15px;
+            }
+
+            .text h2 {
+                font-size: 1.1rem;
+            }
+
+            .text h3 {
+                font-size: 0.95rem;
+            }
+
+            .text p {
+                font-size: 0.8rem;
+            }
+
+            .kenarresimsag,
+            .kenarresimsol {
+                width: 100%;
+                margin: 0.8rem 0;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 12px;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            header h1 span {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 12px;
+            }
+
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            header h1 span {
+                font-size: 0.7rem;
+            }
+        }
