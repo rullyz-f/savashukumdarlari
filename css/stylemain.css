@@ -13,6 +13,7 @@
     --yazi: #333333;
 }
 
+<<<<<<< HEAD
 html {
     font-size: 16px;
 }
@@ -30,6 +31,12 @@ body {
     margin: auto;
     padding: 0 1rem;
 }
+=======
+html { font-size: 16px; }
+body { font-family: 'Libre Baskerville', serif; line-height: 1.6; background: var(--parsomen); color: var(--yazi); }
+
+.container { width: 90%; max-width: 60rem; margin: auto; padding: 0 1rem; }
+>>>>>>> 7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c
 
 header {
     background: linear-gradient(135deg, rgba(26, 26, 26, 0.6), rgba(45, 45, 45, 0.6)), url(../images/worldmap.png);
@@ -208,6 +215,7 @@ footer {
 
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
     html {
         font-size: 14px;
     }
@@ -301,3 +309,34 @@ footer {
         font-size: 1.2rem;
     }
 }
+=======
+    html { font-size: 14px; }
+    header { min-height: 350px; background-attachment: scroll; }
+    header h1 { font-size: 1.8rem; }
+    .container { width: 95%; }
+    .navbar { padding: 0.8rem; }
+    .navbar-menu { gap: 1rem; }
+    .card { grid-template-columns: 1fr; }
+    .card-img { min-height: 150px; }
+    .footer-container { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+    html { font-size: 13px; }
+    header { min-height: 280px; }
+    header h1 { font-size: 1.4rem; }
+    header h1 span { font-size: 0.8rem; }
+    .container { width: 98%; }
+    .navbar { padding: 0.6rem; }
+    .navbar-menu { gap: 0.5rem; }
+    .navbar a { font-size: 0.75rem; }
+    .search-container-navbar { width: 100%; }
+    .card { grid-template-columns: 1fr; }
+    .footer-container { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    html { font-size: 12px; }
+    header h1 { font-size: 1.2rem; }
+}
+>>>>>>> 7f82a1e4eb0c0b02a26412f65ec1c535f591ef9c
